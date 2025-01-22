@@ -31,6 +31,7 @@ export const NavBar = () => {
             <div className='links'>
                 <a href="Home">HOME</a>
                 <a href="About">ABOUT</a>
+                <a href="Events">EVENTS</a>
                 <a href="Ministries">MINISTRIES</a>
                 <a href="Contact">CONTACT</a>
                 <a href="Give">GIVE</a>
