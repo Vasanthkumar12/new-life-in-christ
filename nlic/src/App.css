@@ -55,6 +55,8 @@
     align-items: center;
     background-color: rgb(245, 101, 49);
     padding: 20px 0px 10px 0px;
+    position: sticky;
+    top: 20vh;
   }
   .links a {
     text-decoration: none;
