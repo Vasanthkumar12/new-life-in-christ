@@ -5,6 +5,12 @@
 }
 /* Small Phones */
 @media (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
   /* Small phones styles */
   #logo {
     width: 150px;
@@ -35,6 +41,7 @@
     align-items: center;
     height: 20vh;
     background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     position: sticky;
     top: 0px;
   }
@@ -59,13 +66,11 @@
   /* HEADER COMPONENT */
   header h1 {
     background-color: #155263;
-    font-size: 24px;
     color: rgb(255, 252, 252);
     padding: 20px 10px;
     text-align: center;
   }
   header p{
-    font-size: 16px;
     color: rgb(0, 0, 0);
     padding: 15px 15px 0px 15px;
     text-align: justify;
@@ -80,7 +85,6 @@
   }
   #pastor figure {
     margin-top: 20px;
-    /* border: 2px solid #155263; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   #pastor figure figcaption {
@@ -93,6 +97,37 @@
   #mainContent p {
     text-align: justify;
     padding: 15px 15px 0px 15px;
+  }
+  /* Footer Component */
+  footer {
+    background-color: #c54404;
+    margin-top: 20px;
+    padding: 20px 25px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    letter-spacing: 0.5px;
+  }
+  footer > section, footer > div {
+    padding-top: 20px;
+  }
+  footer a, footer p {
+    color: rgb(255, 255, 255);
+    padding-bottom: 3px;
+  }
+  .footer_head {
+    color: rgb(242, 255, 0);
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+  }
+  #social_medias {
+    align-self: center;
+  }
+  .media_icons {
+    padding: 6px;
+    font-size: 25px;
   }
 }
 
