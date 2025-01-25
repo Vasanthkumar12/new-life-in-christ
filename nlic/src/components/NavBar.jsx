@@ -4,6 +4,7 @@ export const NavBar = () => {
     const [display, setDisplay] = useState('false')
     const showMenu = () => {
         setDisplay(!display)
+        let nav = document.getElementById('navbar').style.paddingBottom = display? '0px' : '10px'
         let res = document.getElementsByClassName('links')
         for(let i=0; i<res.length; i++) {
             res[i].style.display = display? 'flex' : 'none'

@@ -17,6 +17,22 @@ header p{
   padding: 15px 15px 0px 15px;
   text-align: justify;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  background-color: white;
+}
+#navbar {
+  background-color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  position: sticky;
+  top: 0px;
+}
 #pastor {
   display: flex;
   justify-content: center;
@@ -70,10 +86,15 @@ footer a, footer p {
 /* Small Phones */
 @media (max-width: 576px) {
   h1 {
-    font-size: 24px;
+    font-size: 16px;
   }
   p {
     font-size: 16px;
+  }
+  #navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
   }
   /* Small phones styles */
   #logo {
@@ -99,16 +120,7 @@ footer a, footer p {
   #menu_bar div span {
     color: rgb(255, 64, 0);
   }
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 20vh;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    position: sticky;
-    top: 0px;
-  }
+  
   nav div:nth-child(1) {
     padding-right: 20px;
   }
@@ -143,7 +155,7 @@ footer a, footer p {
     font-size: 24px;
   }
   p {
-    font-size: 20px;
+    font-size: 24px;
   }
   #logo {
     width: 150px;
@@ -153,14 +165,15 @@ footer a, footer p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
   }
   #navbar div:nth-child(2) a {
     padding-left: 8px;
     color: rgb(255, 60, 0);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
   }
   #pastorImg {
@@ -189,14 +202,15 @@ footer a, footer p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
   }
   #navbar div:nth-child(2) a {
     padding-left: 8px;
     color: rgb(255, 60, 0);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
   }
   #pastorImg {
@@ -218,18 +232,66 @@ footer a, footer p {
   #pastor figure figcaption {
     font-size: 20px;
   }
+  #mainContent, header p, header div, footer {
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+  }
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #mainContent, header p, header div, footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 /* Desktops */
 @media (min-width: 1025px) {
   /* Desktops styles */
   h1 {
-    font-size: 32px;
+    font-size: 24px;
   }
   p {
-    font-size: 32px;
+    font-size: 24px;
   }
   #contact a, #contact label {
     font-size: 32px;
+  }
+  #logo {
+    width: 250px;
+    height: 125px;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+  }
+  #navbar div:nth-child(2) a {
+    padding-left: 20px;
+    color: rgb(255, 60, 0);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #pastorImg {
+    height: 400px;
+    width: 350px;
+  }
+  #contact a, #contact label {
+    font-size: 24px;
+  }
+  .media_icons {
+    font-size: 32px;
+  }
+  #pastor figure figcaption {
+    font-size: 20px;
+  }
+  #mainContent, header p, header div, footer {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
