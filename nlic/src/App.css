@@ -158,8 +158,8 @@ footer a, footer p {
     font-size: 24px;
   }
   #logo {
-    width: 150px;
-    height: 75px;
+    width: 170px;
+    height: 125px;
   }
   #navbar {
     display: flex;
@@ -274,7 +274,7 @@ footer a, footer p {
     padding-left: 20px;
     color: rgb(255, 60, 0);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
   }
   #pastorImg {
