@@ -3,6 +3,70 @@
   padding: 0px;
   font-family: 'Times New Roman', Times, serif;
 }
+#menu_bar {
+  display: none;
+}
+header h1 {
+  background-color: #155263;
+  color: rgb(255, 252, 252);
+  padding: 20px 10px;
+  text-align: center;
+}
+header p{
+  color: rgb(0, 0, 0);
+  padding: 15px 15px 0px 15px;
+  text-align: justify;
+}
+#pastor {
+  display: flex;
+  justify-content: center;
+}
+#pastor figure {
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#pastor figure figcaption {
+  padding: 5px 0px 10px 0px;
+}
+ /* MainContent Component */
+ #mainContent {
+  padding-top: 20px;
+}
+#mainContent p {
+  text-align: justify;
+  padding: 15px 15px 0px 15px;
+}
+ /* Footer Component */
+ footer {
+  background-color: #c54404;
+  margin-top: 20px;
+  padding: 20px 25px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  letter-spacing: 0.5px;
+}
+footer > section, footer > div {
+  padding-top: 20px;
+}
+footer a, footer p {
+  color: rgb(255, 255, 255);
+  padding-bottom: 3px;
+}
+.footer_head {
+  color: rgb(242, 255, 0);
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+#social_medias {
+  align-self: center;
+}
+.media_icons {
+  padding: 6px;
+  font-size: 25px;
+}
 /* Small Phones */
 @media (max-width: 576px) {
   h1 {
@@ -66,89 +130,106 @@
     letter-spacing: 2px;
   }
   /* HEADER COMPONENT */
-  header h1 {
-    background-color: #155263;
-    color: rgb(255, 252, 252);
-    padding: 20px 10px;
-    text-align: center;
-  }
-  header p{
-    color: rgb(0, 0, 0);
-    padding: 15px 15px 0px 15px;
-    text-align: justify;
-  }
   #pastorImg {
     height: 300px;
     width: 250px;
-  }
-  #pastor {
-    display: flex;
-    justify-content: center;
-  }
-  #pastor figure {
-    margin-top: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-  #pastor figure figcaption {
-    padding: 5px 0px 10px 0px;
-  }
-  /* MainContent Component */
-  #mainContent {
-    padding-top: 40px;
-  }
-  #mainContent p {
-    text-align: justify;
-    padding: 15px 15px 0px 15px;
-  }
-  /* Footer Component */
-  footer {
-    background-color: #c54404;
-    margin-top: 20px;
-    padding: 20px 25px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    letter-spacing: 0.5px;
-  }
-  footer > section, footer > div {
-    padding-top: 20px;
-  }
-  footer a, footer p {
-    color: rgb(255, 255, 255);
-    padding-bottom: 3px;
-  }
-  .footer_head {
-    color: rgb(242, 255, 0);
-    padding-bottom: 5px;
-    letter-spacing: 2px;
-  }
-  #social_medias {
-    align-self: center;
-  }
-  .media_icons {
-    padding: 6px;
-    font-size: 25px;
   }
 }
 
 /* Tablets */
 @media (min-width: 577px) and (max-width: 768px) {
   /* Tablets styles */
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  #logo {
+    width: 150px;
+    height: 75px;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #navbar div:nth-child(2) a {
+    padding-left: 8px;
+    color: rgb(255, 60, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #pastorImg {
+    height: 300px;
+    width: 250px;
+  }
+  #contact a, #contact label {
+    font-size: 20px;
+  }
+  .media_icons {
+    font-size: 32px;
+  }
+  #pastor figure figcaption {
+    font-size: 20px;
+  }
 }
 
 /* Small Laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Small laptops styles */
+  #logo {
+    width: 250px;
+    height: 125px;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #navbar div:nth-child(2) a {
+    padding-left: 8px;
+    color: rgb(255, 60, 0);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #pastorImg {
+    height: 400px;
+    width: 350px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 24px;
+  }
+  #contact a, #contact label {
+    font-size: 24px;
+  }
+  .media_icons {
+    font-size: 32px;
+  }
+  #pastor figure figcaption {
+    font-size: 20px;
+  }
 }
 
 /* Desktops */
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1025px) {
   /* Desktops styles */
-}
-
-/* Large Desktops */
-@media (min-width: 1201px) {
-  /* Large desktops styles */
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 32px;
+  }
+  #contact a, #contact label {
+    font-size: 32px;
+  }
 }

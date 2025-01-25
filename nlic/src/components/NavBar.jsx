@@ -1,7 +1,6 @@
 import logo from '../assets/logo.jpeg'
 import {useState} from 'react'
 export const NavBar = () => {
-
     const [display, setDisplay] = useState('false')
     const showMenu = () => {
         setDisplay(!display)
@@ -12,7 +11,7 @@ export const NavBar = () => {
     }
 
     return (
-        <>
+        <div id='navbar'>
             <nav>
                 <div>
                     <img id='logo' src={logo} alt="logo" />
@@ -36,7 +35,7 @@ export const NavBar = () => {
                 <a href="Contact">CONTACT</a>
                 <a href="Give">GIVE</a>
             </div>
-        </>
+        </div>
     ) 
 }
 
