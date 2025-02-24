@@ -1,5 +1,7 @@
 import logo from '../assets/logo.jpeg'
 import {useState} from 'react'
+import {NavLink} from 'react-router-dom'
+
 export const NavBar = () => {
     const [display, setDisplay] = useState('false')
     const showMenu = () => {
@@ -29,12 +31,12 @@ export const NavBar = () => {
                 </div>
             </nav>
             <div className='links'>
-                <a href="Home">HOME</a>
-                <a href="About">ABOUT</a>
-                <a href="Events">EVENTS</a>
-                <a href="Ministries">MINISTRIES</a>
-                <a href="Contact">CONTACT</a>
-                <a href="Give">GIVE</a>
+                <NavLink to='/'>HOME</NavLink>
+                <NavLink to="/about">ABOUT</NavLink>
+                <NavLink to="/events">EVENTS</NavLink>
+                <NavLink to="/ministries">MINISTRIES</NavLink>
+                <NavLink to="/contact">CONTACT</NavLink>
+                <NavLink to="/give">GIVE</NavLink>
             </div>
         </div>
     ) 
